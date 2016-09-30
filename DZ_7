@@ -1,0 +1,7 @@
+A(X):-not(X=v), X=b.
+B(X):-X=v, not(X=a).
+V(X):-(not(X=b), not(X=v));(not(X=b), X=v).
+Check(X):- A(X),B(X).
+Check(X):- B(X),V(X).
+Check(X):- V(X),A(X).
+?-Check(X)
