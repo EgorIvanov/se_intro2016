@@ -1,0 +1,19 @@
+public class Main
+{
+	public static void main(String[] args) {
+	 string s1='assa'; \\ввод любой строки в s1
+	 int r=length(s1);
+ 	 int l=1;
+	 private static boolean pal(String s1) {
+			while(l<=r){
+		     if (str[l] != str[r]) 
+		     {
+		     	return false
+		     }
+		     ++l
+		     --r
+			}
+        return true
+	}
+	}
+}
