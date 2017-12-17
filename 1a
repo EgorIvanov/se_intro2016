@@ -1,0 +1,22 @@
+#!/bin/bash
+for ((j = 0; j < 100; j++)) do
+filename=
+let "x=$RANDOM%10"
+for ((i = 0; i < x; i++)) do
+let "r=$RANDOM%3"
+if [[ "$r" -eq "0" ]] 
+then
+filename=$filename'a'
+fi
+if [[ "$r" -eq "1" ]] 
+then
+filename=$filename'b'
+fi
+if [[ "$r" -eq "2" ]] 
+then
+filename=$filename'c'
+fi
+done
+>$filename
+done
+

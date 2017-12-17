@@ -1,0 +1,10 @@
+#!/bin/bash
+alph="acdefghijklmnopqrstuvwxyzac"
+for i in ls b* 
+do
+let "r= $RANDOM%26+1"
+let "f= $RANDOM%(26-r+1)+1"
+echo "r=$r"
+echo "f=$f"
+mv $i "${alph:r:f}"
+done
